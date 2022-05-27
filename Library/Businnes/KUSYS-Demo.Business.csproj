@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Core\KUSYS-Demo.Core.csproj" />
+    <ProjectReference Include="..\DataAccess\KUSYS-Demo.DataAccess.csproj" />
+    <ProjectReference Include="..\Models\KUSYS-Demo.Models.csproj" />
+  </ItemGroup>
+
+</Project>
