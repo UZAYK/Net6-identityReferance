@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\KUSYS-Demo.Entities\KUSYS-Demo.Entities.csproj" />
+    <ProjectReference Include="..\KUSYS-Demo.Entities\KUSYS-Demo.Entities.csproj" />
   </ItemGroup>
 
 </Project>
