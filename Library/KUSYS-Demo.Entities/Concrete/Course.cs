@@ -4,6 +4,7 @@ namespace KUSYS_Demo.Entities.Concrete
 {
     public class Course : BaseEntity
     {
+        public string CourseId { get; set; }
         public string CourseName { get; set; }
     }
 }
