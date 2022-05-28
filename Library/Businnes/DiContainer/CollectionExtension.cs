@@ -13,9 +13,11 @@ namespace KUSYS_Demo.Business.DiContainer
         {
             services.AddScoped<ICourseService, CourseManager>();
             services.AddScoped<IStudentService, StudentManager>();
+            services.AddScoped<IStudentCourseMapService, StudentCourseMapManager>();
 
+            services.AddScoped<ICourseDal, EfCourseRepository>(); 
             services.AddScoped<IStudentDal, EfStudentRepository>();
-            services.AddScoped<ICourseDal, EfCourseRepository>();
+            services.AddScoped<IStudentCourseMapDal, EfStudentCourseMapRepository>();
         }
     }
 }

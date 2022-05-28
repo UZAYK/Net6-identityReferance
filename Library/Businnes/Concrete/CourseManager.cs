@@ -31,5 +31,8 @@ namespace KUSYS_Demo.Business.Concrete
 
         public void Remove(Course entity)
         => _courseDal.Remove(entity);
+
+        public void Update(Course entity)
+        => _courseDal.Update(entity);
     }
 }

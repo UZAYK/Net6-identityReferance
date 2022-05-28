@@ -29,8 +29,11 @@ namespace KUSYS_Demo.Business.Concrete
         IEnumerable<Student> IGenericService<Student>.GetAll()
         => _studentDal.GetAll();
 
-
         Student IGenericService<Student>.GetById(int id)
         => _studentDal.GetById(id);
+
+        public void Update(Student entity)
+        => _studentDal.Update(entity);
+
     }
 }
