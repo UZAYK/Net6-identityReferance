@@ -1,45 +1,30 @@
-﻿<!DOCTYPE html>
+﻿@{
+    var request = Context.Request.Path;
+}
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
-    <link rel="icon" type="image/png" href="./assets/img/favicon.png">
-
-    <title>@ViewData["Title"] - KusysProject</title>
-
-    <!--     Fonts and icons     -->
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
-
-    <!-- Nucleo Icons -->
-    <link href="./assets/css/nucleo-icons.css" rel="stylesheet" />
-    <link href="./assets/css/nucleo-svg.css" rel="stylesheet" />
-
-    <!-- Font Awesome Icons -->
-    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
-
-    <!-- Material Icons -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
-
-    <!-- CSS Files -->
-    <link id="pagestyle" href="./assets/css/material-kit.css?v=3.0.2" rel="stylesheet" />
+    <partial name="~/Views/Shared/_Head.cshtml" />
 </head>
 
 <body class="index-page bg-gray-200">
-    @Html.Partial("~/Views/Shared/_HeaderNav.cshtml")
+    @{
+        if (request.Value == "/")
+        {
+            <partial name="~/Views/Shared/_HeaderNav.cshtml" />
+            <partial name="~/Views/Shared/_Header.cshtml" />
+            @RenderBody()
+            <partial name="~/Views/Shared/_Footer.cshtml" />
+        }
+        else
+        {
+            <partial name="~/Views/Shared/_HeaderNavCommon.cshtml" />
+            @RenderBody()
+            <partial name="~/Views/Shared/_FooterCommon.cshtml" />
+        }
+    }
 
-    @Html.Partial("~/Views/Shared/_Header.cshtml")
-
-    <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6">
-        @RenderBody()
-    </div>
-
-    @Html.Partial("~/Views/Shared/_Footer.cshtml")
- 
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 
