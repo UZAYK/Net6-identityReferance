@@ -1,8 +1,17 @@
-﻿namespace KUSYS_Demo.Entities
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace KUSYS_Demo.Models
 {
     public class CourseModel
     {
-        public int CourseId { get; set; }
-        public string CourseName { get; set; }
+        public int Id { get; set; }
+
+        [Required(ErrorMessage = "{0} the field should not be left empty!")]
+        [Display(Name = "Course Id")] 
+        public string CourseId { get; set; }
+
+        [Required(ErrorMessage = "{0} the field should not be left empty!")]
+        [Display(Name = "Course Name")]
+        public string? CourseName { get; set; }
     }
 }

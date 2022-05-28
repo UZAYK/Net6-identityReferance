@@ -1,10 +1,21 @@
-﻿namespace KUSYS_Demo.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace KUSYS_Demo.Models
 {
     public class StudentModel
     {
-        public int StudentId { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
+        public int Id { get; set; }
+        [Required(ErrorMessage = "{0} the field should not be left empty!")]
+        [Display(Name = "Name")] 
+
+        public string? FirstName { get; set; }
+
+        [Display(Name = "Last Name")]
+        [Required(ErrorMessage = "{0} the field should not be left empty!")]
+        public string? LastName { get; set; }
+
+        [Display(Name = "Birth Date")]
+        [Required(ErrorMessage = "{0} the field should not be left empty!")]
         public DateTime BirthDate { get; set; }
     }
 }
