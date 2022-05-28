@@ -4,6 +4,7 @@ using KUSYS_Demo.DataAccess.Concrete.EntityFrameworkCore.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace KUSYSDemo.DataAccess.Migrations
 {
     [DbContext(typeof(KusysDemoContext))]
-    partial class KusysDemoContextModelSnapshot : ModelSnapshot
+    [Migration("20220528221005_UpdatedCourseIdColumnToCourseTable")]
+    partial class UpdatedCourseIdColumnToCourseTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
