@@ -16,7 +16,10 @@ namespace KUSYS_Demo.DataAccess.Concrete.EntityFrameworkCore.Repository
         #endregion
 
         public void Add(T entity)
-        => _context.Set<T>().Add(entity);
+        {
+            _context.Set<T>().Add(entity);
+            _context.SaveChanges();
+        }
 
         public IEnumerable<T> Find(Expression<Func<T, bool>> expression)
         => _context.Set<T>().Where(expression);
@@ -28,6 +31,14 @@ namespace KUSYS_Demo.DataAccess.Concrete.EntityFrameworkCore.Repository
         => _context.Set<T>().Find(id);
 
         public void Remove(T entity)
-        => _context.Set<T>().Remove(entity);
+        {
+            _context.Set<T>().Remove(entity);
+            _context.SaveChanges();
+        }
+        public void Update(T entity)
+        {
+            _context.Set<T>().Update(entity);
+            _context.SaveChanges();
+        }
     }
 }

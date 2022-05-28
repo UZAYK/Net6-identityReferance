@@ -11,5 +11,6 @@ namespace KUSYS_Demo.DataAccess.Interfaces
         IEnumerable<T> Find(Expression<Func<T, bool>> expression);
         void Add(T entity);
         void Remove(T entity);
+        void Update(T entity);
     }
 }
