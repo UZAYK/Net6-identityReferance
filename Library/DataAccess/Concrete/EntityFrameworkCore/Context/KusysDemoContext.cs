@@ -21,6 +21,7 @@ namespace KUSYS_Demo.DataAccess.Concrete.EntityFrameworkCore.Context
             base.OnModelCreating(modelBuilder);
         }
         public DbSet<Course> Courses { get; set; }
+        public DbSet<StudentCourseMap> StudentCourseMaps { get; set; }
         public DbSet<Student> Students { get; set; }
     }
 }
