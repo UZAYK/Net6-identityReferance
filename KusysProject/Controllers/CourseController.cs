@@ -1,11 +1,11 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 
-using KUSYS_Demo.Models;
-using KUSYS_Demo.Entities.Concrete;
-using KUSYS_Demo.Business.Interfaces;
+using KUSYSDemo.Models;
+using KUSYSDemo.Entities.Concrete;
+using KUSYSDemo.Business.Interfaces;
 
-namespace KUSYS_Demo.Controllers
+namespace KUSYSDemo.Controllers
 {
     public class CourseController : Controller
     {

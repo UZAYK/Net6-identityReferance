@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace KUSYS_Demo.Models
+namespace KUSYSDemo.Models
 {
     public class CourseModel
     {

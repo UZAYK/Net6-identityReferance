@@ -1,7 +1,7 @@
 ﻿using System.Linq.Expressions;
-using KUSYS_Demo.Entities.Interfaces;
+using KUSYSDemo.Entities.Interfaces;
 
-namespace KUSYS_Demo.Business.Interfaces
+namespace KUSYSDemo.Business.Interfaces
 {
     public interface IGenericService<T> where T : class, IBaseEntity, new()
     {

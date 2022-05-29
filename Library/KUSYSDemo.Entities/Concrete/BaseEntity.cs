@@ -1,4 +1,4 @@
-﻿namespace KUSYS_Demo.Entities.Interfaces
+﻿namespace KUSYSDemo.Entities.Interfaces
 {
     public class BaseEntity : IBaseEntity
     {

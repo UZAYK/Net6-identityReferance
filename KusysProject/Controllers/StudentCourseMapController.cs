@@ -1,10 +1,10 @@
 ﻿using AutoMapper;
-using KUSYS_Demo.Business.Interfaces;
-using KUSYS_Demo.Entities.Concrete;
-using KUSYS_Demo.Models.StudentCourseMap;
+using KUSYSDemo.Business.Interfaces;
+using KUSYSDemo.Entities.Concrete;
+using KUSYSDemo.Models.StudentCourseMap;
 using Microsoft.AspNetCore.Mvc;
 
-namespace KUSYS_Demo.Controllers
+namespace KUSYSDemo.Controllers
 {
     public class StudentCourseMapController : Controller
     {

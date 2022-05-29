@@ -1,6 +1,6 @@
-﻿using KUSYS_Demo.Entities.Interfaces;
+﻿using KUSYSDemo.Entities.Interfaces;
 
-namespace KUSYS_Demo.Entities.Concrete
+namespace KUSYSDemo.Entities.Concrete
 {
     public class StudentCourseMap : BaseEntity
     {

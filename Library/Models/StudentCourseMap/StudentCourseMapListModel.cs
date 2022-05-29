@@ -1,6 +1,6 @@
-﻿using KUSYS_Demo.Entities.Concrete;
+﻿using KUSYSDemo.Entities.Concrete;
 
-namespace KUSYS_Demo.Models.StudentCourseMap
+namespace KUSYSDemo.Models.StudentCourseMap
 {
     public class StudentCourseMapListModel
     {

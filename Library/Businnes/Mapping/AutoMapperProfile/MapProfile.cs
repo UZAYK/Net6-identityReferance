@@ -1,10 +1,10 @@
 ﻿using AutoMapper;
 
-using KUSYS_Demo.Models;
-using KUSYS_Demo.Entities.Concrete;
-using KUSYS_Demo.Models.StudentCourseMap;
+using KUSYSDemo.Models;
+using KUSYSDemo.Entities.Concrete;
+using KUSYSDemo.Models.StudentCourseMap;
 
-namespace KUSYS_Demo.Business.AutoMapperProfile
+namespace KUSYSDemo.Business.AutoMapperProfile
 {
     public class MapProfile : Profile
     {

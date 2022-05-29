@@ -1,11 +1,11 @@
-﻿using KUSYS_Demo.Business.Concrete;
-using KUSYS_Demo.Business.Interfaces;
-using KUSYS_Demo.DataAccess.Interfaces;
-using KUSYS_Demo.DataAccess.Concrete.EntityFrameworkCore.Repository;
+﻿using KUSYSDemo.Business.Concrete;
+using KUSYSDemo.Business.Interfaces;
+using KUSYSDemo.DataAccess.Interfaces;
+using KUSYSDemo.DataAccess.Concrete.EntityFrameworkCore.Repository;
 
 using Microsoft.Extensions.DependencyInjection;
 
-namespace KUSYS_Demo.Business.DiContainer
+namespace KUSYSDemo.Business.DiContainer
 {
     public static class CollectionExtension
     {

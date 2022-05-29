@@ -1,9 +1,9 @@
-﻿using KUSYS_Demo.Business.Interfaces;
-using KUSYS_Demo.DataAccess.Interfaces;
-using KUSYS_Demo.Entities.Concrete;
+﻿using KUSYSDemo.Business.Interfaces;
+using KUSYSDemo.DataAccess.Interfaces;
+using KUSYSDemo.Entities.Concrete;
 using System.Linq.Expressions;
 
-namespace KUSYS_Demo.Business.Concrete
+namespace KUSYSDemo.Business.Concrete
 {
     public class StudentCourseMapManager : IStudentCourseMapService
     {

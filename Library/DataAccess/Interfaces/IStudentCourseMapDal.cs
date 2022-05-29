@@ -1,7 +1,7 @@
-﻿using KUSYS_Demo.Entities.Concrete;
+﻿using KUSYSDemo.Entities.Concrete;
 using System.Linq.Expressions;
 
-namespace KUSYS_Demo.DataAccess.Interfaces
+namespace KUSYSDemo.DataAccess.Interfaces
 {
     public interface IStudentCourseMapDal : IGenericDal<StudentCourseMap>
     {

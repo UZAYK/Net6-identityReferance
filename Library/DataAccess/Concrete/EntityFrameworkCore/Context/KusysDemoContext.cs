@@ -1,9 +1,9 @@
-﻿using KUSYS_Demo.DataAccess.Concrete.EntityFrameworkCore.Mapping;
-using KUSYS_Demo.Entities;
-using KUSYS_Demo.Entities.Concrete;
+﻿using KUSYSDemo.DataAccess.Concrete.EntityFrameworkCore.Mapping;
+using KUSYSDemo.Entities;
+using KUSYSDemo.Entities.Concrete;
 using Microsoft.EntityFrameworkCore;
 
-namespace KUSYS_Demo.DataAccess.Concrete.EntityFrameworkCore.Context
+namespace KUSYSDemo.DataAccess.Concrete.EntityFrameworkCore.Context
 {
     public class KusysDemoContext : DbContext
     {

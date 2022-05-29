@@ -13,9 +13,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Core\KUSYS-Demo.Core.csproj" />
-    <ProjectReference Include="..\DataAccess\KUSYS-Demo.DataAccess.csproj" />
-    <ProjectReference Include="..\Models\KUSYS-Demo.Models.csproj" />
+    <ProjectReference Include="..\Core\KUSYSDemo.Core.csproj" />
+    <ProjectReference Include="..\DataAccess\KUSYSDemo.DataAccess.csproj" />
+    <ProjectReference Include="..\Models\KUSYSDemo.Models.csproj" />
   </ItemGroup>
 
 </Project>

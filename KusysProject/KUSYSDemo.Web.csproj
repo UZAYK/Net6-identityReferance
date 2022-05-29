@@ -19,9 +19,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Library\Businnes\KUSYS-Demo.Business.csproj" />
-    <ProjectReference Include="..\Library\Core\KUSYS-Demo.Core.csproj" />
-    <ProjectReference Include="..\Library\Models\KUSYS-Demo.Models.csproj" />
+    <ProjectReference Include="..\Library\Businnes\KUSYSDemo.Business.csproj" />
+    <ProjectReference Include="..\Library\Core\KUSYSDemo.Core.csproj" />
+    <ProjectReference Include="..\Library\Models\KUSYSDemo.Models.csproj" />
   </ItemGroup>
 
 </Project>

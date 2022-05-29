@@ -3,19 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KUSYS-Demo", "KusysProject\KUSYS-Demo.csproj", "{EAC05A29-B8C5-449F-894C-797B820CE076}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KUSYSDemo.Web", "KusysProject\KUSYSDemo.Web.csproj", "{EAC05A29-B8C5-449F-894C-797B820CE076}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Library", "Library", "{68EA8078-275D-465B-8190-4CE00ED74041}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KUSYS-Demo.Business", "Library\Businnes\KUSYS-Demo.Business.csproj", "{F574CBEC-8A0B-40C7-BBD9-62DB2FF06B5E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KUSYSDemo.Business", "Library\Businnes\KUSYSDemo.Business.csproj", "{F574CBEC-8A0B-40C7-BBD9-62DB2FF06B5E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KUSYS-Demo.Core", "Library\Core\KUSYS-Demo.Core.csproj", "{3903DF0E-9522-4297-AC5D-021439224A5E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KUSYSDemo.Core", "Library\Core\KUSYSDemo.Core.csproj", "{3903DF0E-9522-4297-AC5D-021439224A5E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KUSYS-Demo.DataAccess", "Library\DataAccess\KUSYS-Demo.DataAccess.csproj", "{F1B11CBB-C4AA-46AA-9071-771A2784EAB8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KUSYSDemo.DataAccess", "Library\DataAccess\KUSYSDemo.DataAccess.csproj", "{F1B11CBB-C4AA-46AA-9071-771A2784EAB8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KUSYS-Demo.Models", "Library\Models\KUSYS-Demo.Models.csproj", "{42F2A179-4285-4F94-A330-8246D71EB867}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KUSYSDemo.Models", "Library\Models\KUSYSDemo.Models.csproj", "{42F2A179-4285-4F94-A330-8246D71EB867}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KUSYS-Demo.Entities", "Library\KUSYS-Demo.Entities\KUSYS-Demo.Entities.csproj", "{6D1BE436-A59C-433E-8C18-6D17A8E76A8E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KUSYSDemo.Entities", "Library\KUSYSDemo.Entities\KUSYSDemo.Entities.csproj", "{6D1BE436-A59C-433E-8C18-6D17A8E76A8E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

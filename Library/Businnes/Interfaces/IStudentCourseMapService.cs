@@ -1,6 +1,6 @@
-﻿using KUSYS_Demo.Entities.Concrete;
+﻿using KUSYSDemo.Entities.Concrete;
 
-namespace KUSYS_Demo.Business.Interfaces
+namespace KUSYSDemo.Business.Interfaces
 {
     public interface IStudentCourseMapService : IGenericService<StudentCourseMap>
     {

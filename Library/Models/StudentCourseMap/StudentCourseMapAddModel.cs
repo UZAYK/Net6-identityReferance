@@ -1,4 +1,4 @@
-﻿namespace KUSYS_Demo.Models.StudentCourseMap
+﻿namespace KUSYSDemo.Models.StudentCourseMap
 {
     public class StudentCourseMapAddModel
     {

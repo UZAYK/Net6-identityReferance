@@ -1,6 +1,6 @@
-using KUSYS_Demo.Business.AutoMapperProfile;
-using KUSYS_Demo.Business.DiContainer;
-using KUSYS_Demo.DataAccess.Concrete.EntityFrameworkCore.Context;
+using KUSYSDemo.Business.AutoMapperProfile;
+using KUSYSDemo.Business.DiContainer;
+using KUSYSDemo.DataAccess.Concrete.EntityFrameworkCore.Context;
 
 var builder = WebApplication.CreateBuilder(args);
 

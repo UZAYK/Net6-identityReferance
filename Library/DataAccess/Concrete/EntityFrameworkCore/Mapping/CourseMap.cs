@@ -1,9 +1,9 @@
-﻿using KUSYS_Demo.Entities;
-using KUSYS_Demo.Entities.Concrete;
+﻿using KUSYSDemo.Entities;
+using KUSYSDemo.Entities.Concrete;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace KUSYS_Demo.DataAccess.Concrete.EntityFrameworkCore.Mapping
+namespace KUSYSDemo.DataAccess.Concrete.EntityFrameworkCore.Mapping
 {
     public class CourseMap : IEntityTypeConfiguration<Course>
     {
