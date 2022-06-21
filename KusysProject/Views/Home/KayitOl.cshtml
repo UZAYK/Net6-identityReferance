@@ -1,0 +1,74 @@
+﻿@model AppUserAddDto
+@{
+    ViewData["Title"] = "KayitOl";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="~/css/SignInCss.css" rel="stylesheet" />
+
+<div class="container-fluid">
+
+    <div class="row no-gutter">
+        <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
+
+        <div class="col-md-8 col-lg-6">
+
+            <div class="login d-flex align-items-center py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-9 col-lg-8 mx-auto">
+                            <h3 class="login-heading mb-4 text-center font-weight-bold">KAYIT OL</h3>
+
+                            <form asp-action="KayitOl" asp-controller="Home" method="post">
+
+                                <div class="form-label-group">
+                                    <input asp-for="UserName" class="form-control input-color" placeholder="Kullanıcı Adı" required autofocus />
+                                    <label asp-for="UserName">Kullancı Adınız</label>
+                                    <span asp-validation-for="UserName" class="text-danger"></span>
+                                </div>
+
+                                <div class="form-label-group">
+                                    <input asp-for="Email" class="form-control input-color" placeholder="E-Mail" required autofocus />
+                                    <label asp-for="Email">E-mail</label>
+                                    <span asp-validation-for="Email" class="text-danger"></span>
+                                </div>
+
+                                <div class="form-label-group">
+                                    <input asp-for="Password" type="password" class="form-control input-color" placeholder="Şifre" required />
+                                    <label asp-for="Password">Şifre</label>
+                                    <span asp-validation-for="Password" class="text-danger"></span>
+                                </div>
+
+                                <div class="form-label-group">
+                                    <input asp-for="ConfirmPassword" class="form-control input-color" placeholder="Şifre Tekrar" required autofocus />
+                                    <label asp-for="ConfirmPassword">Şifre Tekrar</label>
+                                    <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                                </div>
+
+                                <div asp-validation-summary="ModelOnly" class="text-danger"> </div>
+
+                                <button type="submit" class="btn btn-lg btn-danger btn-block btn-login text-uppercase font-weight-bold mb-2">
+                                    <i class="fas fa-thumbs-up mr-2"></i> TAMAM
+                                </button>
+
+                                <a asp-action="Index" class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2">
+                                    <i class="fas fa-hand-point-left mr-2"></i> VAZGEÇ
+                                </a>
+
+                            </form>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/lib/twitter-bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="~/lib/twitter-bootstrap/js/bootstrap.min.js"></script>
+<script src="~/Template/startbootstrap-simple-sidebar-gh-pages (1)/startbootstrap-simple-sidebar-gh-pages/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+

@@ -1,17 +1,22 @@
 ﻿using KUSYSDemo.DataAccess.Concrete.EntityFrameworkCore.Mapping;
 using KUSYSDemo.Entities;
 using KUSYSDemo.Entities.Concrete;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace KUSYSDemo.DataAccess.Concrete.EntityFrameworkCore.Context
 {
-    public class KusysDemoContext : DbContext
+    public class PiccusCareContext : IdentityDbContext<AppUser, AppRole, int>
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source =.\\SQLEXPRESS; Initial Catalog = KusysDemoDB; Integrated Security = True");
+            optionsBuilder.UseSqlServer("Data Source =.\\SQLEXPRESS; Initial Catalog = PiccusCareDB; Integrated Security = True");
             base.OnConfiguring(optionsBuilder);
         }
+
+        //public PiccusCareContext(DbContextOptions<PiccusCareContext> options) : base(options)
+        //{
+        //}
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

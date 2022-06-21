@@ -6,7 +6,7 @@ namespace KUSYSDemo.DataAccess.Concrete.EntityFrameworkCore.Repository
 {
     public class EfStudentRepository : EfGenericRepository<Student>, IStudentDal
     {
-        public EfStudentRepository(KusysDemoContext context) : base(context)
+        public EfStudentRepository(PiccusCareContext context) : base(context)
         {
         }
     }

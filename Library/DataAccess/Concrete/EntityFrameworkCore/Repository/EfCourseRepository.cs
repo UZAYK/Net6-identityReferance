@@ -7,7 +7,7 @@ namespace KUSYSDemo.DataAccess.Concrete.EntityFrameworkCore.Repository
 {
     public class EfCourseRepository : EfGenericRepository<Course>, ICourseDal
     {
-        public EfCourseRepository(KusysDemoContext context) : base(context)
+        public EfCourseRepository(PiccusCareContext context) : base(context)
         {
         }
     }

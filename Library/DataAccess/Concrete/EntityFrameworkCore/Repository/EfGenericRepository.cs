@@ -8,8 +8,8 @@ namespace KUSYSDemo.DataAccess.Concrete.EntityFrameworkCore.Repository
     public class EfGenericRepository<T> : IGenericDal<T> where T : class, IBaseEntity, new()
     {
         #region constructor transactions (dependency incjection)
-        private readonly KusysDemoContext _context;
-        public EfGenericRepository(KusysDemoContext context)
+        private readonly PiccusCareContext _context;
+        public EfGenericRepository(PiccusCareContext context)
         {
             _context = context;
         }

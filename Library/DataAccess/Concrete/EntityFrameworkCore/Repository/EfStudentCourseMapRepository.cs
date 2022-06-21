@@ -7,8 +7,8 @@ namespace KUSYSDemo.DataAccess.Concrete.EntityFrameworkCore.Repository
 {
     public class EfStudentCourseMapRepository : EfGenericRepository<StudentCourseMap>, IStudentCourseMapDal
     {
-        private readonly KusysDemoContext _context;
-        public EfStudentCourseMapRepository(KusysDemoContext context) : base(context)
+        private readonly PiccusCareContext _context;
+        public EfStudentCourseMapRepository(PiccusCareContext context) : base(context)
         {
             _context = context;
         }
