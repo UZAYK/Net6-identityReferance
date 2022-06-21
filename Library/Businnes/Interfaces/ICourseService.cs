@@ -1,6 +1,6 @@
-﻿using KUSYSDemo.Entities.Concrete;
+﻿using Piccus.Entities.Concrete;
 
-namespace KUSYSDemo.Business.Interfaces
+namespace Piccus.Business.Interfaces
 {
     public interface ICourseService : IGenericService<Course>
     {

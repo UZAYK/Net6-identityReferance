@@ -1,10 +1,9 @@
 ﻿using AutoMapper;
 
-using KUSYSDemo.Models;
-using KUSYSDemo.Entities.Concrete;
-using KUSYSDemo.Models.StudentCourseMap;
+using Piccus.Models;
+using Piccus.Entities.Concrete;
 
-namespace KUSYSDemo.Business.AutoMapperProfile
+namespace Piccus.Business.AutoMapperProfile
 {
     public class MapProfile : Profile
     {
@@ -14,27 +13,6 @@ namespace KUSYSDemo.Business.AutoMapperProfile
 
             CreateMap<CourseModel, Course>();
             CreateMap<Course, CourseModel>();
-
-            #endregion
-
-            #region Student-StudentModel
-
-            CreateMap<StudentModel, Student>();
-            CreateMap<Student, StudentModel>();
-
-            #endregion
-
-            #region StudentCourseAddMap-StudentCourseMapModel
-
-            CreateMap<StudentCourseMapAddModel, StudentCourseMap>();
-            CreateMap<StudentCourseMap, StudentCourseMapAddModel>();
-
-            #endregion 
-            
-            #region StudentCourseListMap-StudentCourseMapModel
-
-            CreateMap<StudentCourseMapListModel, StudentCourseMap>();
-            CreateMap<StudentCourseMap, StudentCourseMapListModel>();
 
             #endregion
         }

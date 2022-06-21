@@ -1,8 +1,8 @@
-﻿using KUSYSDemo.Entities;
-using KUSYSDemo.Entities.Interfaces;
+﻿using Piccus.Entities;
+using Piccus.Entities.Interfaces;
 using System.Linq.Expressions;
 
-namespace KUSYSDemo.DataAccess.Interfaces
+namespace Piccus.DataAccess.Interfaces
 {
     public interface IGenericDal<T> where T : class, IBaseEntity, new()
     {

@@ -1,9 +1,9 @@
-﻿using KUSYSDemo.DataAccess.Concrete.EntityFrameworkCore.Context;
-using KUSYSDemo.DataAccess.Interfaces;
-using KUSYSDemo.Entities.Interfaces;
+﻿using Piccus.DataAccess.Concrete.EntityFrameworkCore.Context;
+using Piccus.DataAccess.Interfaces;
+using Piccus.Entities.Interfaces;
 using System.Linq.Expressions;
 
-namespace KUSYSDemo.DataAccess.Concrete.EntityFrameworkCore.Repository
+namespace Piccus.DataAccess.Concrete.EntityFrameworkCore.Repository
 {
     public class EfGenericRepository<T> : IGenericDal<T> where T : class, IBaseEntity, new()
     {

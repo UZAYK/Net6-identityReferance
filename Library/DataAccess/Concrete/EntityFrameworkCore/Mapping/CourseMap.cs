@@ -1,9 +1,9 @@
-﻿using KUSYSDemo.Entities;
-using KUSYSDemo.Entities.Concrete;
+﻿using Piccus.Entities;
+using Piccus.Entities.Concrete;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace KUSYSDemo.DataAccess.Concrete.EntityFrameworkCore.Mapping
+namespace Piccus.DataAccess.Concrete.EntityFrameworkCore.Mapping
 {
     public class CourseMap : IEntityTypeConfiguration<Course>
     {

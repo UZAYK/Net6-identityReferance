@@ -1,4 +1,4 @@
-﻿namespace KUSYSDemo.Models.AppUserDto
+﻿namespace Piccus.Models.AppUserDto
 {
     public class AppUserAddDto
     {

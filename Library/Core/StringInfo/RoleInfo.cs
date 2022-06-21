@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KUSYSDemo.Core.StringInfo
+namespace Piccus.Core.StringInfo
 {
     public class RoleInfo
     {

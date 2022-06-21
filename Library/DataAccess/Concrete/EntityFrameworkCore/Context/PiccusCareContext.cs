@@ -1,10 +1,10 @@
-﻿using KUSYSDemo.DataAccess.Concrete.EntityFrameworkCore.Mapping;
-using KUSYSDemo.Entities;
-using KUSYSDemo.Entities.Concrete;
+﻿using Piccus.DataAccess.Concrete.EntityFrameworkCore.Mapping;
+using Piccus.Entities;
+using Piccus.Entities.Concrete;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace KUSYSDemo.DataAccess.Concrete.EntityFrameworkCore.Context
+namespace Piccus.DataAccess.Concrete.EntityFrameworkCore.Context
 {
     public class PiccusCareContext : IdentityDbContext<AppUser, AppRole, int>
     {
@@ -21,12 +21,9 @@ namespace KUSYSDemo.DataAccess.Concrete.EntityFrameworkCore.Context
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new CourseMap());
-            modelBuilder.ApplyConfiguration(new StudentMap());
 
             base.OnModelCreating(modelBuilder);
         }
         public DbSet<Course> Courses { get; set; }
-        public DbSet<StudentCourseMap> StudentCourseMaps { get; set; }
-        public DbSet<Student> Students { get; set; }
     }
 }

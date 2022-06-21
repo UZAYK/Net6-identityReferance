@@ -1,10 +1,9 @@
 ﻿using System.Linq.Expressions;
+using Piccus.Business.Interfaces;
+using Piccus.DataAccess.Interfaces;
+using Piccus.Entities.Concrete;
 
-using KUSYSDemo.Business.Interfaces;
-using KUSYSDemo.DataAccess.Interfaces;
-using KUSYSDemo.Entities.Concrete;
-
-namespace KUSYSDemo.Business.Concrete
+namespace Piccus.Business.Concrete
 {
     public class CourseManager : ICourseService
     {

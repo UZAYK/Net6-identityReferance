@@ -1,6 +1,6 @@
-﻿using KUSYSDemo.Entities.Concrete;
+﻿using Piccus.Entities.Concrete;
 
-namespace KUSYSDemo.DataAccess.Interfaces
+namespace Piccus.DataAccess.Interfaces
 {
     public interface ICourseDal : IGenericDal<Course>
     {
